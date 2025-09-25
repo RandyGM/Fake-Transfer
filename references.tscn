@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bytdvjfsp4ena"]
+
+[ext_resource type="Texture2D" uid="uid://cii3phwbjm75h" path="res://Assets/References/References.jpg" id="1_6dkdg"]
+[ext_resource type="Texture2D" uid="uid://cy0tkgest4rlj" path="res://Assets/References/References_Nu_P1.jpg" id="2_i6kgp"]
+[ext_resource type="Texture2D" uid="uid://bxxkapm0bae82" path="res://Assets/References/References_Nu_P2.jpg" id="3_lsas2"]
+
+[node name="References" type="Node2D"]
+
+[node name="References" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(287.82816, 639.59375)
+scale = Vector2(0.533, 0.533)
+texture = ExtResource("1_6dkdg")
+
+[node name="ReferencesNuP1" type="Sprite2D" parent="."]
+scale = Vector2(0.533, 0.533)
+texture = ExtResource("2_i6kgp")
+offset = Vector2(540, 1200)
+
+[node name="ReferencesNuP2" type="Sprite2D" parent="ReferencesNuP1"]
+position = Vector2(0, 288.9306)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("3_lsas2")
+offset = Vector2(540, 1200)

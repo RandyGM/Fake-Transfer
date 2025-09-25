@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcajvak4lumm"]
+
+[ext_resource type="Script" uid="uid://dxl62tv5k8c8s" path="res://Scenes/transferencia.gd" id="1_f8dm7"]
+[ext_resource type="PackedScene" uid="uid://bp1cbh34d3dih" path="res://Nodes/mercado_pago.tscn" id="1_igatb"]
+[ext_resource type="PackedScene" uid="uid://6um757n2lpg0" path="res://Nodes/nu_bank.tscn" id="3_3api6"]
+
+[node name="Transferencia" type="Node2D"]
+script = ExtResource("1_f8dm7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MercadoPago" parent="CanvasLayer" instance=ExtResource("1_igatb")]
+
+[node name="nu_bank" parent="CanvasLayer" instance=ExtResource("3_3api6")]
+visible = false

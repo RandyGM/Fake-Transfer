@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://shuyqn7utcag"]
+
+[ext_resource type="Script" uid="uid://daotiv8mh2wpp" path="res://Scripts/exit_button.gd" id="1_b783p"]
+[ext_resource type="Texture2D" uid="uid://b36n277tg4nwl" path="res://Assets/Images/cross-svgrepo-com.svg" id="1_xih5v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kmvw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pionu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etkmm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iysng"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ydsln"]
+
+[node name="Exit" type="Button"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -288.0
+offset_right = -288.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0kmvw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pionu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_etkmm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iysng")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ydsln")
+script = ExtResource("1_b783p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -396.0
+offset_top = -396.0
+offset_right = 404.0
+offset_bottom = 404.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.041281853, 0.041281853)
+pivot_offset = Vector2(396, 396)
+texture = ExtResource("1_xih5v")
